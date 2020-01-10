@@ -1,0 +1,12 @@
+#title{
+    text-align: center;
+}
+
+#title-container{
+    height:100%;
+}
+
+#screen-container{
+    height: 100vh;
+    vertical-align: middle;
+}
