@@ -66,10 +66,8 @@ app.get('/status/abasin', (req, res) => {
             console.log(closedList.length + openList.length);
             // console.log("-----------------------");
 
-            res.send({
-                "open": openList,
-                "closed": closedList
-            })
+            return res.send({`${String.fromCharCode(2)}01010101`})
+            
         }
     });
 })
@@ -77,7 +75,7 @@ app.get('/status/abasin', (req, res) => {
 function listOfTrails(list) {
     trailsList = [];
     const notIncluded = ['Open', 'Closed', 'From 5:00 AM until 8:00 AM', 'During Ski Area Operational Hours', 'From Ski Area Closing until 5:00 AM',
-        "Lower Mountain Blues", "Lower Mountain Greens", "Terrain Parks", "East Wall", "East Wall Hiking", "Lower Lenawee Zone", "Upper Lenawee Zone", "West Wall Zone", "Challenger Zone", "North Glade Zone", "Pallavinci", "Slalom Slope/Grizzly Road", "Standard/Exhibition Zone", "Steep Gullies & Hike Back Terrain", "East Zuma", "Hike Back Terrain", "MGD Zone", "Montezuma Bowl Blues", "West Zuma", "Beavers Intermediate Terrain", "Lower Beavers Zone", "Upper Beavers Zone", "Molly Hogan Lift", "Molly Hogan", "Molly's Magic Carpet", "Pika Place Carpet", "Pika Place"]
+        "Lower Mountain Blues", "Lower Mountain Greens", "Terrain Parks", "East Wall", "East Wall Hiking", "Lower Lenawee Zone", "Upper Lenawee Zone", "West Wall Zone", "Challenger Zone", "North Glade Zone", "Pallavinci", "Slalom Slope/Grizzly Road", "Standard/Exhibition Zone", "Steep Gullies & Hike Back Terrain", "East Zuma", "Hike Back Terrain", "MGD Zone", "Montezuma Bowl Blues", "West Zuma", "Beavers Intermediate Terrain", "Lower Beavers Zone", "Upper Beavers Zone", "Molly Hogan", "Molly's Magic Carpet", "Pika Place Carpet", "Pika Place"]
     for (let i = 0; i < list.length; i++) {
         const trail = list[i];
         for (let j = 0; j < trail.children.length; j++) {
