@@ -62,7 +62,7 @@ app.get('/status/abasin', (req, res) => {
 
 
             let map = new Map();
-            const orderedList = ["Moose Hollow", "North Fork", "Exhibition", "Sundance", "Wrangler", "Tree Chutes 1-8", "North Y Chute", 
+            const orderedList = ["Moose Hollow", "North Fork", "Exhibition", "Sundance", "Wrangler", "Tree Chutes 1-8", "North Y Chute", "North Y Chute",
             "South Y Chute", "Corner Chute", "Corner Chute", "Willy's Wide", "North Pole", "Falcon", "Humbug", "Zuma Lift", "Ptarmigan", "Loafer", "Peaceful Valley",
             "The Last Waltz", "Dreamcatcher", "Bighorn", "Bighorn", "Glockenspiel Glade", "Pioneer Willy", "Drummond", "Bald Spot", "Janitors Only", "Christmas Trees",
             "Pali Wog", "Rock Garden", "Turbo", "West Turbo", "Timber Glades", "East Avenue", "Pali Main Street", "Pallavicini", "Pallavicini", "East Woods", 
