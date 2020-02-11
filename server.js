@@ -66,7 +66,7 @@ app.get('/status/abasin', (req, res) => {
             console.log(closedList.length + openList.length);
             // console.log("-----------------------");
 
-            return res.send(`${String.fromCharCode(2)}01010101`);
+            return res.send(`${String.fromCharCode(2)}1010101101010110101011010101101010110101010101010110101011010101101010110101011010101010101011010101101010110101011010101101010101010101101010110101011010101101010110101010`);
             
         }
     });
