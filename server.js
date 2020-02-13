@@ -72,7 +72,7 @@ app.get('/status/abasin', (req, res) => {
             "Lenawee Parks", "Dercum's Gulch", "Knolls", "Pallavicini Lift", "Molly Hogan Lift", "Black Mountain Express Lift", "Standard", "Bear Trap", "International",
             "13 Cornices", "My Chute", "North Glade", "Grizzly Road", "Powder Keg", "Slalom Slope", "North Chute", "Nose", "South Chute", "Cornice Run", "King Cornice",
             "Challenger Zone", "Lynx Lane", "TB Glades", "Upper Chisholm Trail", "High Noon", "The Gulch", "Ramrod", "Weasel Way", "Lower Chisholm Trail", "Lenawee Mountain Lift",
-            "Norway Face", "Norway Mountain Run", "Beavers"]
+            "Norway Face", "Norway Mountain Run", "Beavers"];
             listOfTrails(openTrails, 1, map);
             listOfTrails(closedTrails, 0, map);
             console.log(map);
