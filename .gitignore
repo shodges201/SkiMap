@@ -104,4 +104,4 @@ dist
 .tern-port
 
 #secret arduino file
-arduino_secret.h
+arduino_secrets.h
