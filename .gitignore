@@ -104,4 +104,4 @@ dist
 .tern-port
 
 #secret arduino file
-arduino_secret.h
+/Arduino/LED_Map/arduino_secrets.h
