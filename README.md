@@ -1,6 +1,6 @@
 # Ski Map
 
-This is an IOT project created using an Arduino WIFI Rev 2, a Node.js/Express.js API, and WS2812b LEDs strung together to create a reactive ski-resort map that lights up all the trails with either green or red lights depending on whether they are open or closed and lifts with blue or red lights depending on whether they are open or closed.
+This is an IOT project created using an Arduino WIFI Rev 2, a Node.js/Express.js API, and WS2812b LEDs strung together to create a reactive ski-resort map that lights up all the trails with either green or red lights depending on whether they are open or closed and lifts with blue or red lights depending on whether they are open or closed. The same information passed to the map can be found in a simple web interface found [here](https://ski-map.herokuapp.com/).
 
 #### -- Project Status: Active
 
