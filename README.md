@@ -18,9 +18,16 @@ The objective of this project was to create a physical map that would have light
 
 ## Project Description
 
-The LEDs were glued down to a piece of wood cut to the size of the map. Each WS2812b LED has 6 soldering pins, 4 for power/ground, 1 for data in and 1 for data out.
+The LEDs were glued down to a piece of wood cut to the size of the map. The spots to place each LED were measured out on the map and then an LED was glued to that same place on the wooden board. Each WS2812b LED has 6 soldering pins, 2 for power, 2 for ground, 1 for data in, and 1 for data out. The LEDs came in a roll where they were already connected to each other so they could be cut into single LEDs or shorter strings as needed. Receiving them in this format was especially useful for lifts, because it reduced the amount of soldering needed, because long strips could be cut and placed where lifts are without needing to solder 6 wires to each individual LED, instead only having to solder at the first and last LED in the pre-attached strip.
 
-This project was my introduction to the basics of elictrical engineering as there was lots of soldering involved, as well as planning out power requirements to supply ample power, but not burn out any LEDs. This was the biggest challenge, and lots of planning went into this project before any LEDs were soldered or even glued down. I used [cheerio](https://cheerio.js.org/) as a web scraping tool to scrape the website of the ski resort, and used the Arduino to get the trail/lift data from the Node server and then used this data to light up the LEDs accordingly.
+This project was my introduction to the basics of elictrical engineering as there was lots of soldering involved, as well as planning out power requirements to supply ample power, but not burn out any LEDs. This was the biggest challenge, and lots of planning went into this project before any LEDs were soldered or even glued down. 
+
+[Cheerio](https://cheerio.js.org/) was used as a web scraping tool to scrape the website of the ski resort. The Arduino was then used to hit the API route that sent back an ordered binary string with a character at the front of the message signifying that the binary string is starting. I used an ASCII 2 character which seemed fitting because it is supposed to signify the beginning of text according to [http://www.asciitable.com/](http://www.asciitable.com/). The Arduino then receives the data as a byte stream and so I ignored all characters until the ASCII 2 character and then read the 1s and 0s and used the neopixel library to light up the trails and lifts according to the ordered data. The only issue with this was that lifts comprised of more than one LED, so I had to keep track of which lift corresponded to which data point, and light up the number of LEDs that comprised the lift before moving on to the next data point.
+
+## TODO
+* Add a switch on the power line so the user can turn the lights off without removing the power cord
+* Glue down the wires on the back of the map
+* Get the map framed
 
 
 ## Contributing Members
