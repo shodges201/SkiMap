@@ -6,7 +6,8 @@ This is an IOT project created using an Arduino WIFI Rev 2, a Node.js/Express.js
 
 ## Project Intro/Objective
 The objective of this project was to create a physical map that would have lights for all the trails and lifts, and light up open trails and lifts green or blue for open and red for closed. I thought this would be a cool gift for a family member of mine who lives in Colorado and enjoys skiing.  
-![]("Images/ezgif.com-video-to-gif.gif")
+
+![Map Video]("Images/ezgif.com-video-to-gif.gif")
 
 ### Technologies
 * Node.js
