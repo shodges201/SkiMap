@@ -12,8 +12,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/abasin', (req, res) => {
-    const notIncluded = ['Open', 'Closed', 'From 5:00 AM until 8:00 AM', 'During Ski Area Operational Hours', 'From Ski Area Closing until 5:00 AM',
-        "Lower Mountain Blues", "Lower Mountain Greens", "Terrain Parks", "East Wall", "East Wall Hiking", "Lower Lenawee Zone", "Upper Lenawee Zone", "West Wall Zone", "North Glade Zone", "Pallavinci", "Slalom Slope/Grizzly Road", "Standard/Exhibition Zone", "Steep Gullies & Hike Back Terrain", "East Zuma", "Hike Back Terrain", "MGD Zone", "Montezuma Bowl Blues", "West Zuma", "Beavers Intermediate Terrain", "Lower Beavers Zone", "Upper Beavers Zone", "Molly Hogan", "Molly's Magic Carpet", "Pika Place Carpet", "Pika Place"];
     getAbasinInfo((info) => {
         console.log(info);
         res.json(info);
