@@ -26,7 +26,7 @@ This project was my introduction to the basics of elictrical engineering as ther
 
 [Cheerio](https://cheerio.js.org/) was used as a web scraping tool to scrape the website of the ski resort. The Arduino was then used to hit the API route that sent back an ordered binary string with a character at the front of the message signifying that the binary string is starting. I used an ASCII 2 character which seemed fitting because it is supposed to signify the beginning of text according to [http://www.asciitable.com/](http://www.asciitable.com/). The Arduino then receives the data as a byte stream and so I ignored all characters until the ASCII 2 character and then read the 1s and 0s and used the neopixel library to light up the trails and lifts according to the ordered data. The only issue with this was that lifts comprised of more than one LED, so I had to keep track of which lift corresponded to which data point, and light up the number of LEDs that comprised the lift before moving on to the next data point.
 
-## TODO
+## TO DO
 * Get the map framed
 
 
